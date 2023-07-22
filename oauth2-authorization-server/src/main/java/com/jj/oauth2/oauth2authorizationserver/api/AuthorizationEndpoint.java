@@ -27,6 +27,7 @@ import java.security.Principal;
 import java.time.LocalDateTime;
 import java.util.*;
 
+//the authorization endpoint requires that the user be authenticated. For that if user is not logged in will be redirect to the login.jsp
 @FormAuthenticationMechanismDefinition(
         loginToContinue = @LoginToContinue(loginPage = "/login.jsp", errorPage = "/login.jsp")
 )
