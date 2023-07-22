@@ -71,6 +71,7 @@ public class TokenEndpoint {
             return responseError("Invalid_request", "Can't get token", Response.Status.INTERNAL_SERVER_ERROR);
         }
 
+        //Before generating the token, we need an RSA private key for signing tokens.
         return Response.ok(tokenResponse)
                 .header("Cache-Control", "no-store")
                 .header("Pragma", "no-cache")
