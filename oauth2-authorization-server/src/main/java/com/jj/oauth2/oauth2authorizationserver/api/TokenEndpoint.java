@@ -60,6 +60,7 @@ public class TokenEndpoint {
             return responseError("Invalid_request", "Invalid client_secret", Response.Status.UNAUTHORIZED);
         }
 
+        //  we delegate the production of the TokenResponse to a corresponding grant type handler
         AuthorizationGrantTypeHandler authorizationGrantTypeHandler = authorizationGrantTypeHandlers.select(NamedLiteral.of(grantType)).get();
         JsonObject tokenResponse = null;
         try {
