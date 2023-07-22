@@ -109,6 +109,8 @@ public class AuthorizationEndpoint {
         return null;
     }
 
+    // The browser renders an authorization UI for the user, and the user makes a selection.
+    // Then, the browser submits the user's selection in an HTTP POST
     @POST
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.TEXT_HTML)
