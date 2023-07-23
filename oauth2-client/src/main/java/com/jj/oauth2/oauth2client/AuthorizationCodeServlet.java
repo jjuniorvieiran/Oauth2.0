@@ -23,6 +23,7 @@ public class AuthorizationCodeServlet extends HttpServlet {
     //  generate and append a code, in addition to the received state parameter,
     //  to the redirect_uri and will redirect back
     //  the browser http://localhost:9081/callback?code=A123&state=Y.
+    // callback code can be found in CallbackServlet.java
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //...
