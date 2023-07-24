@@ -6,4 +6,15 @@
 ## Oauth2.0 authorization code grant flow
 ![Oauth2.0 authorization code grant flow](./auth_code_flow.png)
 
-## 3. OAuth 2.0 Authorization Server
+
+# Run
+mvn package liberty:run-server
+
+# Authorization Server
+http://localhost:9080/
+
+# Client
+http://localhost:9180/
+
+# Resource Server
+http://localhost:9280/
